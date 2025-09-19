@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# devil-arena
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Football field booking website built with React — booking UI and Google Maps
 
 ## Available Scripts
 
