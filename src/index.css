@@ -1,0 +1,27 @@
+/* ✅ تهيئة عامة لكل العناصر */
+* {
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+/* ✅ إعدادات الجسم (body) الأساسية */
+body {
+   background-color: #2e2e2e;
+  color: #ffffff; 
+  font-family: sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth; 
+}
+
+/* ✅ إعدادات الروابط */
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+/* ✅ إعدادات الصور */
+img {
+  max-width: 100%; 
+  display: block; 
+}

@@ -1,0 +1,62 @@
+{
+  "name": "devil-arena",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "axios": "^1.11.0",
+    "framer-motion": "^12.23.12",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.2",
+    "jspdf-autotable": "^5.0.2",
+    "qrcode": "^1.5.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.7.1",
+    "react-scripts": "^5.0.1",
+    "recharts": "^3.2.0",
+    "web-vitals": "^2.1.4",
+    "xlsx": "^0.18.5"
+  },
+  "scripts": {
+    "start": "set PORT=3001&& set HOST=127.0.0.1&& react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:fix": "eslint 'src/**/*.{js,jsx,ts,tsx}' --fix"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "globals": {
+      "ApplePaySession": "readonly",
+      "PaymentRequest": "readonly"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.3"
+  }
+}

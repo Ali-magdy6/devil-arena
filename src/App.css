@@ -1,0 +1,244 @@
+/* ========== إعدادات أساسية للصفحة ========== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========== إعداد شكل التطبيق في الوضع الفاتح ========== */
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* ========== إعداد شكل التطبيق في الوضع الداكن ========== */
+.app.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* ========== ترويسة الصفحة (الهيدر) ========== */
+.header {
+  display: flex;
+  justify-content: center;     
+  align-items: center;         
+  gap: 20px;                   
+  padding: 40px 20px;
+  position: relative;
+  background-color: #1f1f1f;
+  border-bottom: 2px solid #8a0000;
+  margin-top: 60px; /* Add space for fixed top bar */
+}
+
+/* ========== صورة اللوجو ========== */
+.logo {
+   width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* ========== عنوان الموقع بجوار اللوجو ========== */
+.title {
+  font-size: 48px;
+  margin-bottom: 10px;
+    text-align: center;
+
+}
+ p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+
+}
+
+/* Removed old dark mode toggle styles - now handled by TopBar */
+
+/* ========== تنسيق الأقسام العامة (مثل About - Location - ...etc) ========== */
+section {
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ========== تنسيق نموذج الحجز (Booking Form) ========== */
+.booking-section {
+  padding: 60px 20px;
+  text-align: left;
+  background-color: #fff;
+}
+
+.form-container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.booking-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* 📌 تنسيق كل مجموعة (label + input) */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 📌 تنسيق العنوان فوق كل input */
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.booking-section input,
+.booking-section button {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.booking-section button {
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-section button:hover {
+  background-color: #555;
+}
+
+
+
+
+
+/* ========== مظهر الحقول والأزرار في الوضع الداكن ========== */
+.app.dark input,
+.app.dark button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+/* ========== زرار إرسال النموذج ========== */
+button[type="submit"] {
+  cursor: pointer;
+  background-color: #dd1616;
+  color: white;
+  border: none;
+}
+
+/* ========== تأثير الهوفر على زرار الإرسال ========== */
+button[type="submit"]:hover {
+  background-color: #dd1616;
+}
+
+/* ========== صورة ملعب الكرة (Pitch Image) ========== */
+.pitch-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* ========== أيقونات السوشيال ميديا (Instagram, Facebook, etc.) ========== */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* ========== زر الواتساب العائم وتحريكه ========== */
+a[href*="wa.me"] img {
+  animation: floatWhatsapp 3s infinite ease-in-out;
+}
+
+@keyframes floatWhatsapp {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.admin-page {
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.section-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.admin-table th {
+  background-color: #f5f5f5;
+}
+
+.delete-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear-all {
+  background-color: #8b0000;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* الوضع الليلي */
+.dark-mode .section-box {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark-mode .admin-table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .admin-table td {
+  border-color: #444;
+}
+
+.dark-mode .delete-btn,
+.dark-mode .clear-all {
+  background-color: #ff4d4f;
+}
+
